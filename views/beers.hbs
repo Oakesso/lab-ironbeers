@@ -1,0 +1,23 @@
+<h1>All our Beers</h1>
+<div>
+    <ul>    
+        {{#each beersFromApi}}
+        <li>
+            <img class=img-beer src={{this.image_url}} alt={{this.name}} />
+        </li>
+        <li>
+            {{this.name}}
+        </li>
+        <li>
+            {{this.description}}
+        </li>
+        <li>
+            {{this.tagline}}
+        </li>
+        <br>
+        {{/each}}
+    </ul>
+</div>
+
+
+
